@@ -18,7 +18,7 @@ def test_images(test_path,originals,names,threshold=0.88):
         print(" No match found.")
 
 test_images(
-    test_path=r"C:\\Users\\LENOVO\\Documents\\PROJECTS\\pixel-peep\\images\\test\\meme.png",
+    test_path=r"C:\\pixel-peep\\images\\test\\meme.png",
     originals=originals,
     names=names,
     threshold=0.80
