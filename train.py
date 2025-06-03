@@ -36,7 +36,7 @@ def train_images(folder_path):
             filenames.append(file)
     return np.vstack(embeddings), filenames
 
-original_folder=r"C:\\Users\\LENOVO\\Documents\\PROJECTS\\pixel-peep\\images\\originals"
+original_folder=r"C:\\pixel-peep\\images\\originals"
 originals, names = train_images(original_folder)
 
 #never mind this part 
