@@ -54,7 +54,7 @@ def test_images(test_path,originals,names,threshold=0.88):
 
     if best_score >= threshold:
         print(" Match found !")
-    else:
+    #else:
         print(" No match found.")
 #original_folder=r"C:\\Users\\LENOVO\\Documents\\PROJECTS\\pixel-peep\\images\\originals"
 #originals, names = load_original_embeddings(original_folder)
