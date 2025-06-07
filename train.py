@@ -42,7 +42,7 @@ originals, names = train_images(original_folder)
 #never mind this part 
 '''
 # Match test image to originals
-def test_images(test_path,originals,names,threshold=0.88):
+#def test_images(test_path,originals,names,threshold=0.88):
     #originals, names = load_original_embeddings(original_folder)
     test_emb = get_embedding(test_path)
     sims = cosine_similarity(test_emb, originals)[0]
