@@ -44,9 +44,9 @@ originals, names = train_images(original_folder)
 # Match test image to originals
 #def test_images(test_path,originals,names,threshold=0.88):
     #originals, names = load_original_embeddings(original_folder)
-    test_emb = get_embedding(test_path)
-    sims = cosine_similarity(test_emb, originals)[0]
-    best_idx = np.argmax(sims)
+    #test_emb = get_embedding(test_path)
+    #sims = cosine_similarity(test_emb, originals)[0]
+    #best_idx = np.argmax(sims)
     best_score = sims[best_idx]
 
     print(f"Best match: {names[best_idx]}")
