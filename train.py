@@ -49,7 +49,7 @@ originals, names = train_images(original_folder)
     #best_idx = np.argmax(sims)
     #best_score = sims[best_idx]
 
-    print(f"Best match: {names[best_idx]}")
+   #print(f"Best match: {names[best_idx]}")
     print(f"Similarity score: {best_score:.3f}")
 
     if best_score >= threshold:
