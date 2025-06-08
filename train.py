@@ -47,7 +47,7 @@ originals, names = train_images(original_folder)
     #test_emb = get_embedding(test_path)
     #sims = cosine_similarity(test_emb, originals)[0]
     #best_idx = np.argmax(sims)
-    best_score = sims[best_idx]
+    #best_score = sims[best_idx]
 
     print(f"Best match: {names[best_idx]}")
     print(f"Similarity score: {best_score:.3f}")
