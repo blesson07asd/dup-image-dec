@@ -64,4 +64,4 @@ originals, names = train_images(original_folder)
     names=names,
     threshold=0.88
 #)'''
-"""""""
+
