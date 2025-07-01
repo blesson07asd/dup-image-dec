@@ -6,8 +6,8 @@ from torchvision import models, transforms
 #from sklearn.metrics.pairwise import cosine_similarity
 
 
-resnet = models.resnet50(pretrained=True)
-resnet = torch.nn.Sequential(*list(resnet.children())[:-1])  # Remove layer because it is not needed (last layers) only needs features//classifier
+resnet=models.resnet50(pretrained=True)
+resnet=torch.nn.Sequential(*list(resnet.children())[:-1])  # Remove layer because it is not needed (last layers) only needs features//classifier
 resnet.eval()
 
 
