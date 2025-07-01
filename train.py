@@ -18,8 +18,8 @@ transform = transforms.Compose([
 ])
 
 def get_embedding(image_path):
-    image = Image.open(image_path).convert("RGB")
-    image = transform(image).unsqueeze(0)
+    image=Image.open(image_path).convert("RGB")
+    image=transform(image).unsqueeze(0)
     with torch.no_grad():
         embedding = resnet(image).squeeze().numpy()
     return embedding.reshape(1, -1)
