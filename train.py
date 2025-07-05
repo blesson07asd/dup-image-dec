@@ -51,7 +51,7 @@ originals, names = train_images(original_folder)
 
    #print(f"Best match: {names[best_idx]}")
     print(f"Similarity score: {best_score:.3f}")
-
+#
     if best_score >= threshold:
         print(" Match found !")
     #else:
