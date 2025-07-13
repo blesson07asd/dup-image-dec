@@ -7,7 +7,7 @@ from torchvision import models, transforms
 
 
 resnet=models.resnet50(pretrained=True)
-resnet=torch.nn.Sequential(*list(resnet.children())[:-1])  # Remove layer because it is not needed (last layers) only needs features//classifier
+resnet=torch.nn.Sequential(*list(resnet.children())[:-1])  # R#emove layer because it is not needed (last layers) only needs features//classifier
 resnet.eval()
 
 
