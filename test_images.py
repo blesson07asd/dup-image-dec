@@ -3,7 +3,7 @@ from train import originals, names, get_embedding
 import numpy as np
 
 def test_images(test_path,originals,names,threshold=0.88):
-    #originals, names = load_original_embeddings(original_folder)
+    ###originals, names = load_original_embeddings(original_folder)
     test_emb = get_embedding(test_path)
     sims = cosine_similarity(test_emb, originals)[0]
     best_idx = np.argmax(sims)
